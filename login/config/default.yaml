@@ -1,0 +1,17 @@
+service:
+  name: 'login'
+  port: 7001
+  env: 'DEV'
+
+bbs:
+  name: 'Ads Server'
+
+default:
+  bbs: 'wa'
+  sub: 'fr'
+
+i18n:
+  default: 'fr'
+
+jwt:
+  secret: 'jlvghjkfvJKHFVJKYTFfdfgdfgdyertyery'
