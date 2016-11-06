@@ -28,9 +28,13 @@ var app = express();
 app.use(favicon(__dirname + '/public/favicon.ico'));
 app.use(bodyParser.urlencoded({ extended: true }));    // parse application/x-www-form-urlencoded
 app.use(bodyParser.json())  ;  // parse application/json
+
 app.use(cookieParser());
 app.use(function(req, res, next) {
     res.header("X-powered-by", "openBBS");
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
     next();
 });
 app.use(function(req, res, next) {
