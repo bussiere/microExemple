@@ -5,6 +5,7 @@
 
 function getplanning(req,res,callback) {
     var response = new Object();
+    console.log("uid",req.body.uid);
     response.status = 1;
     response.message = "";
     var planning = new Object();

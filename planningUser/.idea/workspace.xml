@@ -31,17 +31,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="planningUser.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="planningUser.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/v1/planningUser.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+            <state relative-caret-position="126">
+              <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="planningUser.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="planningUser.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/planningUser.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
@@ -654,12 +654,12 @@
       <updated>1478365765355</updated>
       <workItem from="1478365766868" duration="250000" />
       <workItem from="1478381251461" duration="1887000" />
-      <workItem from="1478429766784" duration="2427000" />
+      <workItem from="1478429766784" duration="2665000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4564000" />
+    <option name="totallyTimeSpent" value="4802000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1295" height="744" extended-state="6" />
@@ -808,14 +808,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/v1/planningUser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/default.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -831,6 +823,14 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1/planningUser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
