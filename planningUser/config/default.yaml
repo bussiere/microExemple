@@ -1,6 +1,6 @@
 service:
-  name: 'login'
-  port: 7001
+  name: 'planningUser'
+  port: 7003
   env: 'DEV'
 
 bbs:

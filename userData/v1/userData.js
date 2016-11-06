@@ -1,18 +1,26 @@
+var request = require('request');
 
 
 
 
-
-function testLogin(req,res,callback) {
+function Data(req,res,callback) {
     var response = new Object();
     response.status = 1;
     response.message = "";
-    response.data = "OK";
-    var responseJson = JSON.stringify(response);
+    var dataUser = new Object();
+    dataUser.name = "bussiere";
+
+    request.get({url:'http://localhost:7003/v1/planning', form: {"uid":'bussieere'}}, function(err,httpResponse,body){
+    console.log(body);
+        body = JSON.parse(body);
+        dataUser.date = body.data.date;
+        response.data = dataUser;
+        var responseJson = JSON.stringify(response);
     res.status(200).send(responseJson);
+    });
 
 
 }
 
 
-exports.testLogin   = testLogin;
+exports.Data   = Data;

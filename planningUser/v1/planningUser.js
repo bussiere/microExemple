@@ -7,7 +7,9 @@ function getplanning(req,res,callback) {
     var response = new Object();
     response.status = 1;
     response.message = "";
-    response.data = "OK";
+    var planning = new Object();
+    planning.date = "28/01/2016";
+    response.data = planning;
     var responseJson = JSON.stringify(response);
     res.status(200).send(responseJson);
 

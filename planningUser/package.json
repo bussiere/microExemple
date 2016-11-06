@@ -1,7 +1,7 @@
 {
-  "name": "login",
+  "name": "planningUser",
   "version": "1.41.1",
-  "description": "login",
+  "description": "planningUser",
   "main": "login.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

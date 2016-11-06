@@ -47,10 +47,10 @@ app.use(function(req, res, next) {
 // Matching
 //
 
-var login             = require('./v1/userData');
+var userData             = require('./v1/userData');
 
-app.get('/v1/login',
-    login.testLogin);
+app.get('/v1/userdata',
+    userData.Data);
 
 var status = 'running';
 
