@@ -49,7 +49,7 @@ app.use(function(req, res, next) {
 
 var planning            = require('./v1/planningUser');
 
-app.get('/v1/planning',
+app.post('/v1/planning',
     planning.getplanning);
 
 var status = 'running';

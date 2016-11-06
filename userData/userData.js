@@ -33,10 +33,15 @@ app.use(function(req, res, next) {
     res.header("X-powered-by", "openBBS");
     next();
 });
+
 app.use(function(req, res, next) {
-    console.log(' - ',req.originalUrl);
+    res.header("X-powered-by", "openBBS");
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
     next();
 });
+
 
 
 
@@ -49,7 +54,7 @@ app.use(function(req, res, next) {
 
 var userData             = require('./v1/userData');
 
-app.get('/v1/userdata',
+app.post('/v1/userdata',
     userData.Data);
 
 var status = 'running';

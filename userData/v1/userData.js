@@ -10,8 +10,9 @@ function Data(req,res,callback) {
     var dataUser = new Object();
     dataUser.name = "bussiere";
 
-    request.get({url:'http://localhost:7003/v1/planning', form: {"uid":'bussiere'}}, function(err,httpResponse,body){
-    console.log(body);
+    request.post({url:'http://localhost:7003/v1/planning', form: {"uid":'bussiere'}}, function(err,httpResponse,body){
+        console.log(httpResponse);
+        console.log(body);
         body = JSON.parse(body);
         dataUser.date = body.data.date;
         response.data = dataUser;

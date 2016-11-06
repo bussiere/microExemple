@@ -5,11 +5,11 @@
         .module('app')
         .controller('HomeController', HomeController);
 
-    HomeController.$inject = ['UserService', '$rootScope'];
-    function HomeController(UserService, $rootScope) {
+    HomeController.$inject = ['UserService', '$rootScope','$http','$scope'];
+    function HomeController(UserService, $rootScope,$http,$scope) {
         var vm = this;
 
-        vm.user = null;
+        $rootScope.user = new Object();
         vm.allUsers = [];
         vm.deleteUser = deleteUser;
 
@@ -21,10 +21,20 @@
         }
 
         function loadCurrentUser() {
-            UserService.GetByUsername($rootScope.globals.currentUser.username)
-                .then(function (user) {
-                    vm.user = user;
-                });
+            $http({
+                method: 'POST',
+                url: 'http://localhost:7002/v1/userdata',
+                data : {'uid':$rootScope.globals.currentUser.username}
+            }).then(function successCallback(response) {
+                console.log("response",response);
+                console.log(response.data.data);
+                $rootScope.user.firstname = response.data.data.name;
+                console.log($rootScope.user.firstname);
+            }, function errorCallback(response) {
+                vm.dataLoading = false;
+            });
+
+
         }
 
         function loadAllUsers() {
