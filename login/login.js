@@ -49,7 +49,7 @@ app.use(function(req, res, next) {
 
 var login             = require('./v1/login');
 
-app.get('/v1/login',
+app.post('/v1/login',
     login.testLogin);
 
 var status = 'running';

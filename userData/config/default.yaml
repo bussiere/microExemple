@@ -1,6 +1,6 @@
 service:
-  name: 'login'
-  port: 7001
+  name: 'userData'
+  port: 7002
   env: 'DEV'
 
 bbs:
